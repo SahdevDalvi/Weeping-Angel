@@ -57,5 +57,6 @@ public class Enemy : MonoBehaviour
         yield return new WaitForSeconds(1f);
         player.gameObject.SetActive(true);
         player.position = new Vector3(-5.7f , 5.73f, -8.73f);
+        Playercam = Camera.main;
     }
 }
